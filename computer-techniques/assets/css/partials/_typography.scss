@@ -1,0 +1,242 @@
+//
+// _typography.scss
+// Description
+//
+
+a {
+    /* 
+        Appearance 
+    */
+
+    color: black;
+
+    /* 
+        Layout 
+    */
+
+
+
+    /* Selectors */
+
+    &:hover {
+        /*
+            Appearance
+        */
+
+        background-color: #E040FB;
+
+        /*
+            Media Queries
+        */
+
+        @media (prefers-color-scheme: dark) {
+            background-color: #AA00FF;
+        }
+    }
+
+    /*
+        Media Queries
+    */
+
+    @media (prefers-color-scheme: dark) {
+        color: white;
+    }
+}
+
+blockquote {
+    /* 
+        Appearance 
+    */
+
+    font-style: italic;
+
+    /* 
+        Layout
+    */
+
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+
+code {
+    /* 
+        Appearance 
+    */
+
+    // These colors come from the syntax highlighting theme for code blocks
+    background: #282a36;
+    color: #f1fa8c;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+h1 {
+    /* 
+        Appearance 
+    */
+
+    font-size: 2.2em;
+    line-height: 1.4em;
+    text-align: center;
+
+    /* 
+        Layout 
+    */
+    
+    margin-bottom: 1em;
+}
+
+h2 {
+    /* 
+        Appearance 
+    */
+
+    font-size: 1.8em;
+
+    /* 
+        Layout 
+    */
+    
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    /* 
+        Appearance 
+    */
+
+    font-size: 1.4em;
+
+    /* 
+        Layout 
+    */
+    
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    /* 
+        Appearance 
+    */
+
+    font-size: 1.1em;
+
+    /* 
+        Layout 
+    */
+    
+    margin-bottom: 0.5em;
+}
+
+h5 {
+    /* 
+        Appearance 
+    */
+
+    font-size: 0.8em;
+    text-transform: uppercase;
+
+    /* 
+        Layout 
+    */
+    
+    margin-bottom: 0em;
+}
+
+h6 {
+    /* 
+        Appearance 
+    */
+
+    font-size: 0.6em;
+    text-transform: uppercase;
+
+    /* 
+        Layout 
+    */
+    
+    margin-bottom: 0em;
+}
+
+ol {
+    list-style-type: upper-roman;
+
+    /* 
+        Layout 
+    */
+
+    list-style-position: outside;
+    margin-bottom: 1em;
+
+    li {
+        margin-left: 2em;
+        padding-left: .5em;
+    }
+}
+
+p {
+    /* 
+        Layout 
+    */
+
+    margin-bottom: 1em;
+}
+
+pre {
+    /* 
+        Appearance 
+    */
+
+    font-size: smaller;
+    line-height: 1.1em;
+
+    /* 
+        Layout 
+    */
+
+    margin-bottom: 1em;
+    padding: 0.5em;
+
+    /* 
+        Children 
+    */
+
+    & code {
+        /* 
+            Appearance 
+        */
+
+        background: inherit;
+        color: white;
+    }
+}
+
+ul {
+    /* 
+        Appearance 
+    */
+
+    list-style-type: disc;
+
+    /* 
+        Layout
+    */
+
+    margin-bottom: 1em;
+}
+
+a code, p code, li code, dd code, td code {
+    /* 
+        Appearance 
+    */
+
+    font-size: smaller;
+
+    /* 
+        Layout
+    */
+
+    padding-bottom: .1em;
+    padding-left: .2em;
+    padding-right: .2em;
+    padding-top: .1em;
+}

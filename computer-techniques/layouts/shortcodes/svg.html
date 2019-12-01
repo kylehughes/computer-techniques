@@ -1,0 +1,5 @@
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+    {{ with .Page.Resources.GetMatch (printf "*%s.svg" (.Get "src")) }}
+        {{ readFile .RelPermalink | safeHTML }}
+    {{ end }}
+</figure>

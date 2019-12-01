@@ -1,0 +1,28 @@
+{
+  "name": "computer-techniques",
+  "version": "1.0.0",
+  "description": "Computer Techniques by Kyle Hughes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kylehughes/computer-technique.git"
+  },
+  "author": "Kyle Hughes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kylehughes/computer-techniques/issues"
+  },
+  "homepage": "https://github.com/kylehughes/computer-techniques",
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "child_process": "~1.0.2",
+    "gulp": "^4.0.2",
+    "gulp-awspublish": "~4.0.0",
+    "gulp-cloudfront-invalidate-aws-publish": "^1.0.0",
+    "postcss-cli": "^6.1.3"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}

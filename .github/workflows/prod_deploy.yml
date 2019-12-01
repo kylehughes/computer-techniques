@@ -1,0 +1,51 @@
+name: Deploy to production
+
+on:
+  push:
+    branches:
+    - mainline
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+        
+    - name: Cache node modules
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Set up Hugo
+      uses: peaceiris/actions-hugo@v2.2.3
+      with:
+        hugo-version: '0.59.0'
+        extended: true
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Deploy to production
+      run: gulp deploy
+      env:
+        BROCK_PROD_AWS_ACCESS_KEY_ID: ${{ secrets.BROCK_PROD_AWS_ACCESS_KEY_ID }}
+        BROCK_PROD_AWS_SECRET_ACCESS_KEY: ${{ secrets.BROCK_PROD_AWS_SECRET_ACCESS_KEY }}
+
+    - name: Notify Kyle
+      uses: twilio-labs/actions-sms@v1
+      with:
+        fromPhoneNumber: ${{ secrets.PHONE_NUMBER_TWILIO }}
+        toPhoneNumber: ${{ secrets.PHONE_NUMBER_PERSONAL }}
+        message: 'Your website was deployed successfully. https://kylehugh.es'
+      env:
+        TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+        TWILIO_API_KEY: ${{ secrets.TWILIO_API_KEY }}
+        TWILIO_API_SECRET: ${{ secrets.TWILIO_API_SECRET }}

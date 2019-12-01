@@ -1,0 +1,6 @@
+# Hugo
+build
+resources
+
+# npmjs
+node_modules

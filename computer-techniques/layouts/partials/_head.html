@@ -1,0 +1,44 @@
+<head>
+    <title>{{ .Site.Title }}</title>
+
+    <!-- General Metadata -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    {{ .Hugo.Generator }}
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- OpenGraph Metadata -->
+
+    <meta property="og:url" content="{{ .Site.BaseURL }}">
+    <meta property="og:title" content="{{ .Site.Params.author }}">
+    <meta property="og:image" content="{{ printf "%s%s" $.Site.BaseURL "opengraph-banner.png" }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+
+    <!-- Twitter Metadata -->
+
+    <meta name="twitter:title" content="{{ .Site.Title }}">
+    <meta name="twitter:description" content="{{ .Site.Params.description }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{{ .Site.BaseURL }}">
+    <meta name="twitter:creator" content="@{{ .Site.Params.acct_twitter }}">
+    <meta name="twitter:image" content="{{ printf "%s%s" $.Site.BaseURL "opengraph-banner.png" }}">
+
+    <!-- Resources -->
+
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2&cb=000">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+    {{ $style := resources.Get "css/style.scss" | resources.ToCSS | resources.PostCSS | minify | fingerprint}}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+    {{ range .AlternativeOutputFormats -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+</head>

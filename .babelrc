@@ -1,0 +1,8 @@
+//
+// .babelrc
+// Description
+//
+
+{
+    "presets": ["es2015"]
+}

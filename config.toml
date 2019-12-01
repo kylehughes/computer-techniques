@@ -1,0 +1,20 @@
+assetDir                        = "computer-techniques/assets"
+baseurl                         = "https://kylehugh.es/"
+contentDir                      = "computer-techniques/content"
+dataDir                         = "computer-techniques/data"
+enableGitInfo                   = true
+googleAnalytics                 = "UA-56024310-2"
+languageCode                    = "en-us"
+layoutDir                       = "computer-techniques/layouts"
+publishDir                      = "build"
+pygmentsCodefences              = true
+pygmentsStyle                   = "dracula"
+staticDir                       = "computer-techniques/static"
+themesDir                       = "computer-techniques/themes"
+title                           = "Computer Techniques"
+uglyurls                        = true
+
+[params]
+    author                      = "Kyle Hughes"
+    description                 = ""
+    acct_twitter                = "KyleHughes"

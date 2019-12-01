@@ -1,0 +1,69 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+{{ partial "_head.html" . }}
+
+<body>
+
+    <div class="container">
+
+        {{ partial "header.html" . }}
+
+        <div class="content">
+
+            <section class="home__articles">
+                
+                <header class="home__section-header">
+                    <h4>Documents</h4>
+                    <!-- <div class="home__section-header__action"><a href="{{ .Site.BaseURL }}documents/index.xml">RSS</a></div> -->
+                </header>
+
+                {{ range first 5 .Site.RegularPages }}
+                    {{ .Render "brief-document" }}
+                {{ end }}
+
+            </section>
+
+            <section class="home__links">
+
+                <section class="home__projects">
+
+                        <header class="home__section-header">
+                            <h4>Projects</h4>
+                        </header>
+
+                        <ul>
+                            <li><a href="https://amazon.care">Amazon Care</a></li>
+                            <li><a href="https://apps.apple.com/us/app/amazon-kindle/id302584613">Amazon Kindle</a></li>
+                            <li><a href="https://github.com/kylehughes/computer-techniques">Computer Techniques</a></li>
+                            <li><a href="https://github.com/kylehughes/RomanNumeralKit">RomanNumeralKit</a></li>
+                        </ul>
+    
+                </section>
+
+                <section class="home__accounts">
+
+                    <header class="home__section-header">
+                        <h4>Bookmarks</h4>
+                    </header>
+    
+                    <ul>
+                        {{ range sort $.Site.Data.social.accounts "site" "asc" }}
+                            <li><a href="{{ .url }}">{{ .site }}</a></li>
+                        {{ end }}
+                    </ul>
+    
+                </section>
+
+            </section>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+//
+// _page.scss
+// Description
+//
+
+////////////////////////////////////////////////////////////////////////////////
+// GLOBALS
+////////////////////////////////////////////////////////////////////////////////
+
+::selection {
+    /* 
+        Appearance 
+    */
+
+    // background: invert($color-background);
+    // color: invert($color-text-base);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// ROOT CONTAINER
+////////////////////////////////////////////////////////////////////////////////
+
+.container {
+    /* 
+        Layout 
+    */
+
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 240px;
+    max-width: 900px;
+    padding: 1em;
+
+    /* 
+        Mixins 
+    */
+
+    @media screen and (min-width: $breakpoint-small) {
+        /* 
+            Layout 
+        */
+
+        padding: 3em;
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// HEADER
+////////////////////////////////////////////////////////////////////////////////
+
+.header {
+    /* 
+        Appearance 
+    */
+
+    background-color: black;
+
+    /* 
+        Layout 
+    */
+
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+
+    /*
+        Media Queries
+    */
+
+    @media (prefers-color-scheme: dark) {
+        /* 
+            Appearance 
+        */
+
+        background: white;
+        color: black;
+    }
+
+    /* 
+        Extensions 
+    */
+
+    &__subtitle {
+        /* 
+            Appearance 
+        */
+
+        font-size: .8em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        /* 
+            Appearance 
+        */
+
+        font-size: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    & a {
+        /* 
+            Appearance 
+        */
+        color: white;
+        text-decoration: none;
+
+        /*
+            Media Queries
+        */
+
+        @media (prefers-color-scheme: dark) {
+            color: black;
+        }
+
+        &:hover {
+            /* 
+                Appearance 
+            */
+
+            background-color: inherit;
+            color: #E040FB;
+
+            /*
+                Media Queries
+            */
+
+            @media (prefers-color-scheme: dark) {
+                /* 
+                    Appearance 
+                */
+
+                color: #AA00FF;
+            }
+        }
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// CONTENT CONTAINER
+////////////////////////////////////////////////////////////////////////////////
+
+.content {
+    /* 
+        Appearance 
+    */
+
+    line-height: $dimen-content-line-height;
+
+    /* 
+        Children 
+    */
+
+    & section {
+        /* 
+            Layout 
+        */
+
+        margin-bottom: 2em;
+    }
+
+    section:last-child {
+        /* 
+            Layout 
+        */
+
+        margin-bottom: 0em;
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// HOME PAGE
+////////////////////////////////////////////////////////////////////////////////
+
+.home__articles {
+    /* 
+        Children 
+    */
+
+    & article {
+        /* 
+            Layout 
+        */
+
+        margin-bottom: 1em;
+
+        & header {
+            /* 
+                Layout 
+            */
+
+            margin-bottom: 0em;
+        }
+    }
+}
+
+.home__links {
+    /* 
+        Layout
+    */
+
+    display: block;
+
+    /* 
+        Media Queries
+    */
+
+    @media screen and (min-width: $breakpoint-small) {
+        /* 
+            Layout
+        */
+
+        display: table;
+        width: 100%;
+    }
+}
+
+.home__accounts {
+    /* 
+        Layout
+    */
+
+    display: block;
+
+    /* 
+        Media Queries
+    */
+
+    @media screen and (min-width: $breakpoint-small) {
+        /* 
+            Layout
+        */
+
+        display: table-cell;
+        padding-left: 1em;
+        width: 50%;
+    }
+}
+
+.home__projects {
+    /* 
+        Layout
+    */
+
+    display: block;
+
+    /* 
+        Media Queries
+    */
+
+    @media screen and (min-width: $breakpoint-small) {
+        /* 
+            Layout
+        */
+
+        display: table-cell;
+        padding-right: 1em;
+        width: 50%;
+    }
+}
+
+.home__section-header {
+    /* 
+        Appearance
+    */
+
+    border-bottom: black 2px solid;
+
+    /* 
+        Layout
+    */
+
+    display: table;
+    margin-bottom: 1em;
+    width: 100%;
+
+    /*
+        Media Queries
+    */
+
+    @media (prefers-color-scheme: dark) {
+        /* 
+            Appearance
+        */
+
+        border-bottom: white 2px solid;
+    }
+
+    /*
+        Components
+    */
+
+    &__action {
+        /* 
+            Appearance
+        */
+
+        text-align: center;
+
+        /* 
+            Layout
+        */
+
+        display: table-cell;
+        width: 3em;
+
+        & a {
+            /* 
+                Appearance
+            */
+
+            background: white;
+            border-radius: 10px;
+            color: black;
+            font-size: small;
+            font-weight: bold;
+            text-decoration: none;
+
+            /* 
+                Layout
+            */
+
+            padding: 0em .5em;
+
+            /* 
+                Media Queries
+            */
+
+            @media (prefers-color-scheme: light) {
+                background: black;
+                color: white;
+            }
+        }
+
+        /* 
+            Children
+        */
+
+        & a:hover {
+            /* 
+                Appearance
+            */
+
+            color: white;
+
+            @media (prefers-color-scheme: light) {
+                /* 
+                    Appearance
+                */
+
+                color: black;
+            }
+        }
+    }
+
+    & h4 {
+        /* 
+            Appearance 
+        */
+
+        text-transform: uppercase;
+
+        /* 
+            Layout 
+        */
+
+        display: table-cell;
+        margin-bottom: 0em;
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// DOCUMENT: BRIEF
+////////////////////////////////////////////////////////////////////////////////
+
+.brief-document {
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// DOCUMENT: FULL
+////////////////////////////////////////////////////////////////////////////////
+
+.full-document {
+    /* 
+        Children
+    */
+
+    & .footnotes {
+        /* 
+            Children
+        */
+
+        ol {
+            /* 
+                Appearance 
+            */
+            
+            list-style-type: decimal;
+        }
+    }
+
+    &__diagram {
+        /* 
+            Appearance 
+        */
+    
+        background: #282a36;
+        border: 2px white solid;
+    
+        /* 
+            Layout
+        */
+    
+        margin-bottom: 1em;
+        padding: 1em;
+    
+        /* 
+            Media Queries
+        */
+    
+        @media (prefers-color-scheme: light) {
+            border: 2px black solid;
+        }
+    
+        /* 
+            Children
+        */
+    
+        & img {
+            display: block;
+            margin: 0 auto;
+        }
+    
+        /* 
+            Variants
+        */
+    
+        &--transparent {
+            /* 
+                Appearance 
+            */
+    
+            background: none;
+            border: none;
+    
+            /* 
+                Layout
+            */
+    
+            padding: 0em;
+        }
+    }
+}
+
+.full-document__metadata {
+    /* 
+        Appearance 
+    */
+
+    font-size: .6em;
+    line-height: 1.5em;
+
+    /* 
+        Layout
+    */
+
+    margin-top: 4em;
+}
