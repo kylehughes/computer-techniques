@@ -8,7 +8,6 @@ categories:
 tags:
   - "coaxial-backhaul"
   - "home-network"
-draft: true
 ---
 
 ## Problem
@@ -73,6 +72,8 @@ I won't provide the entire history of MoCA adoption and rollout, but the table b
 
 This diagram shows the topology of the network at the time of writing. It has been fully operational, with the MoCA backhaul, for 8 months. 
 
+{{< svg src="images/diagram_network-topology" class="full-document__diagram full-document__diagram--transparent" >}}
+
 ##### [ARRIS SURFboard DOCSIS 3.1 Cable Modem](https://amzn.to/2STs1ME)
 
 The network bridge between the home LAN and the WAN, as accessed through my cable Internet Service Provider.
@@ -83,7 +84,7 @@ The router is responsible for managing the LAN and providing access to the WAN f
 
 ##### [Ubiquiti UniFi Switch, 8-Port 150W](https://amzn.to/2tqaelH)
 
-The "backbone" switch for the home LAN. There is one port dedicated to the router. The rest of the ports are used for access points and wired devices.
+The "backbone" switch for the home LAN. There is one port dedicated to the router. The rest of the ports are for access points and wired devices.
 
 ##### [Ubiquiti UniFi Cloud Key Gen2 Plus](https://amzn.to/2Qo8Glj)
 
@@ -103,9 +104,11 @@ The Ubiquiti access points can each act as a switch and provide an RJ45 to exten
 
 MoCA's responsibility in the network deployment is to act as an RJ45-to-coax bridge at the sites where I need to deploy access points. There are three adapters in play:
 
-1. The primary adapter sits between the incoming ISP coax drop and the cable modem on the third floor. This adapter's responsibility is to "inject" the coax backhaul in the house with the MoCA Internet connection, as provided by the cable modem. No access points are dependent on this adapter because the third-floor access  is connected directly to the switch.
+1. The primary adapter sits between the incoming ISP coax drop and the cable modem on the third floor. It is also connected to the switch to connect to the LAN. This adapter's responsibility is to "inject" the coax backhaul in the house with the MoCA Internet connection, as provided by the cable modem. No access points are dependent on this adapter because the third-floor access is connected directly to the switch. It needs to sit between the ISP drop and the cable modem because the room has only one F connector, which is shared by the ISP connection and the MoCA LAN.
 1. A bridging adapter is deployed on the first floor, connected to the room's coaxial F connector, and provides Internet access to the first-floor access point.
 1. A bridging adapter is deployed on the second floor, connected to the room's coaxial F connector, and provides Internet access to the second-floor access point.
+
+I am currently using the [Actiontec Bonded MoCA 2.0 adapters](https://amzn.to/2MXV3ah) in all locations.
 
 ## Other Options
 
