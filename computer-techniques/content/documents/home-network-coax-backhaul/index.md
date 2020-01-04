@@ -13,7 +13,7 @@ draft: true
 
 ## Problem
 
-In April 2019, I moved into a three-story rental townhome that was not wired to support [RJ45][rj45] wall plates (see: [Ethernet][ethernet]). I have many wired and wireless devices, and I'm a networking wonk, so I need my residence to have readily-available, multi-modal Internet everywhere. I wanted all three floors to have full 5GHz [WiFi 5](wifi-5) (see: [802.11ac][80211ac]) coverage, as well as gigabit (or close) wired RJ45 access in most rooms. It followed that I would ideally deploy wireless access points from the RJ45 drops on each floor.
+In April 2019, I moved into a three-story rental townhome not wired to support [RJ45][rj45] wall plates (see: [Ethernet][ethernet]). I have many wired and wireless devices, and I'm a networking wonk, so I need my residence to have readily-available, multi-modal Internet everywhere. I wanted all three floors to have full 5GHz [WiFi 5](wifi-5) (see: [802.11ac][80211ac]) coverage, as well as gigabit (or close) wired RJ45 access in most rooms. It followed that I would ideally deploy wireless access points from the RJ45 drops on each floor.
 
 Rewiring the residence with Cat6 cables was not possible because it was a rental. Wired with [RG59 or RG6][coax-cable-type] (see: Coax) like many modern American homes, we find wall plates with [F connectors][f-connector] in most rooms.
 
@@ -60,7 +60,7 @@ This approach fit my use case well and was straightforward to deploy. I only bec
 
 #### MoCA Performance
 
-I won't provide the entire history of MoCA adoption and rollout, but the table below highlights the throughput that each MoCA version can theoretically support. We can see that from MoCA 2.1 Bonded and on we are dealing with throughput that is suitable to run a home LAN over.
+I won't provide the entire history of MoCA adoption and rollout, but the table below highlights the throughput that each MoCA version can theoretically support. We can see that from MoCA 2.1 Bonded and on, we are dealing with throughput that is suitable to be the backbone of a home network.
 
 |                           | MoCA 1.0 | MoCA 1.1 | MoCA 2.0 | MoCA 2.0 Bonded | MoCA 2.1 | MoCA 2.1 Bonded | MoCA 2.5 | MoCA 3.0 |
 | ------------------------- | -------- | -------- | -------- | --------------- | -------- | --------------- | -------- | -------- |
@@ -69,18 +69,47 @@ I won't provide the entire history of MoCA adoption and rollout, but the table b
 
 ### Deployment
 
-I have diagramed my general network topology. Unneccessary implementation details are left out.
+#### Network Topology
 
-- **Modem**: The cable modem which is the network bridge between the home LAN and the WAN, as accessed through my cable provider.
-- **Ubiquiti Security Gateway**: The router behind which the home LAN operates and which. WAN access comes in from the modem. 
-- **Ubiquiti 10-Port Switch**: The "backbone" switch for the home LAN. One port is dedicated for the router, so that devices on the LAN can communicate with each other and with the WAN. The rest of the ports are used for access points and wired devices.
-- **Ubiquiti Cloud Key Gen 2**: The host for the Ubiquiti Unifi controller software that I use to manage the network.
-- **Ubiquiti AP-HD**:
-- **Ubiquiti AP-AC-Pro** (2x): 
+This diagram shows the topology of the network at the time of writing. It has been fully operational, with the MoCA backhaul, for 8 months. 
+
+##### [ARRIS SURFboard DOCSIS 3.1 Cable Modem](https://amzn.to/2STs1ME)
+
+The network bridge between the home LAN and the WAN, as accessed through my cable Internet Service Provider.
+
+##### [Ubiquiti UniFi Security Gateway](https://amzn.to/2Qp3Wfa)
+
+The router is responsible for managing the LAN and providing access to the WAN for local devices.
+
+##### [Ubiquiti UniFi Switch, 8-Port 150W](https://amzn.to/2tqaelH)
+
+The "backbone" switch for the home LAN. There is one port dedicated to the router. The rest of the ports are used for access points and wired devices.
+
+##### [Ubiquiti UniFi Cloud Key Gen2 Plus](https://amzn.to/2Qo8Glj)
+
+The host for the Ubiquiti Unifi controller software that I use to manage the network.
+
+##### [Ubiquiti UniFi Access Point AP-AC-HD](https://amzn.to/36ppzlb)
+
+The primary access point for the house, located on the second floor. It handles the most significant number of clients.
+
+##### [Ubiquiti UniFi Access Point AP-AC-HD](https://amzn.to/2rT3Se8) (2x)
+
+The secondary access points for the house, located on the first and third floors. These are smaller access points that carry fewer clients.
+
+The Ubiquiti access points can each act as a switch and provide an RJ45 to extend the wired network.
+
+#### MoCA Integration
+
+MoCA's responsibility in the network deployment is to act as an RJ45-to-coax bridge at the sites where I need to deploy access points. There are three adapters in play:
+
+1. The primary adapter sits between the incoming ISP coax drop and the cable modem on the third floor. This adapter's responsibility is to "inject" the coax backhaul in the house with the MoCA Internet connection, as provided by the cable modem. No access points are dependent on this adapter because the third-floor access  is connected directly to the switch.
+1. A bridging adapter is deployed on the first floor, connected to the room's coaxial F connector, and provides Internet access to the first-floor access point.
+1. A bridging adapter is deployed on the second floor, connected to the room's coaxial F connector, and provides Internet access to the second-floor access point.
 
 ## Other Options
 
-### Powerline
+Two popular options for running a home network in a building not wired for RJ45 are [Powerline](https://www.techradar.com/news/networking/powerline-networking-what-you-need-to-know-930691) and [mesh networks](https://www.tomsguide.com/us/what-is-mesh-wifi-router,news-24580.html). 
 
-### Mesh Access Points
+My cursory investigation found that Powerline isn't suitable for gigabit speeds. My inner networking wonk finds wireless backbones to be distasteful, so running a mesh network was never a personal consideration.
 
