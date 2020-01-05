@@ -59,18 +59,22 @@ This approach fit my use case well and was straightforward to deploy. I only bec
 
 #### MoCA Performance
 
-I won't provide the entire history of MoCA adoption and rollout, but the table below highlights the throughput that each MoCA version can theoretically support. We can see that from MoCA 2.1 Bonded and on, we are dealing with throughput that is suitable to be the backbone of a home network.
+I won't provide the entire history of MoCA adoption and rollout, but the list below highlights the throughput that each MoCA version can theoretically support. We can see that from MoCA 2.0/2.1 Bonded and on, we are dealing with throughput that is suitable to be the backbone of a home network.
 
-|                           | MoCA 1.0 | MoCA 1.1 | MoCA 2.0 | MoCA 2.0 Bonded | MoCA 2.1 | MoCA 2.1 Bonded | MoCA 2.5 | MoCA 3.0 |
-| ------------------------- | -------- | -------- | -------- | --------------- | -------- | --------------- | -------- | -------- |
-| **Mbit/s actual throughput** | 100      | 175      | 500      | 1000            | 500      | 1000            | 2500     | 10000    |
-| **Number of channels bonded** | N/A      | N/A      | N/A      | 2               | N/A      | 2               | 3~5      | <= 4     |
+- *MoCA 1.0*: 100Mbps
+- *MoCA 1.1*: 175Mbps
+- *MoCA 2.0*: 500Mbps
+- *MoCA 2.0 Bonded*: 1000Mbps
+- *MoCA 2.1*: 500Mbps
+- *MoCA 2.1 Bonded*: 1000Mbps
+- *MoCA 2.5*: 2500Mbps
+- *MoCA 3.0*: 10000Mbps
 
 ### Deployment
 
 #### Network Topology
 
-This diagram shows the topology of the network at the time of writing. It has been fully operational, with the MoCA backhaul, for 8 months. 
+This diagram shows the topology of the network at the time of writing. It has been fully operational, with the MoCA backhaul running at gigabit speeds, for 8 months.
 
 {{< svg src="images/diagram_network-topology" class="full-document__diagram full-document__diagram--transparent" >}}
 
