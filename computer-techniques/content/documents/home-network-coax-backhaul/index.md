@@ -61,14 +61,14 @@ This approach fit my use case well and was straightforward to deploy. I only bec
 
 I won't provide the entire history of MoCA adoption and rollout, but the list below highlights the throughput that each MoCA version can theoretically support. We can see that from MoCA 2.0/2.1 Bonded and on, we are dealing with throughput that is suitable to be the backbone of a home network.
 
-- *MoCA 1.0*: 100Mbps
-- *MoCA 1.1*: 175Mbps
-- *MoCA 2.0*: 500Mbps
-- *MoCA 2.0 Bonded*: 1000Mbps
-- *MoCA 2.1*: 500Mbps
-- *MoCA 2.1 Bonded*: 1000Mbps
-- *MoCA 2.5*: 2500Mbps
-- *MoCA 3.0*: 10000Mbps
+- *MoCA 1.0*: 100 Mbps
+- *MoCA 1.1*: 175 Mbps
+- *MoCA 2.0*: 500 Mbps
+- *MoCA 2.0 Bonded*: 1000 Mbps
+- *MoCA 2.1*: 500 Mbps
+- *MoCA 2.1 Bonded*: 1000 Mbps
+- *MoCA 2.5*: 2500 Mbps
+- *MoCA 3.0*: 10000 Mbps
 
 ### Deployment
 
