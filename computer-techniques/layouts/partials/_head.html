@@ -38,7 +38,7 @@
     {{ $style := resources.Get "css/style.scss" | resources.ToCSS | resources.PostCSS | minify | fingerprint}}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
 
-    {{ range .AlternativeOutputFormats -}}
+    <!-- {{ range .AlternativeOutputFormats -}}
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
+    {{ end -}} -->
 </head>

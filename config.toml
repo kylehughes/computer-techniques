@@ -2,6 +2,7 @@ assetDir                        = "computer-techniques/assets"
 baseurl                         = "https://kylehugh.es/"
 contentDir                      = "computer-techniques/content"
 dataDir                         = "computer-techniques/data"
+disableKinds                    = ["RSS", "section", "taxonomy", "taxonomyTerm"]
 enableGitInfo                   = true
 googleAnalytics                 = "UA-56024310-2"
 languageCode                    = "en-us"
