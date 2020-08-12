@@ -17,10 +17,10 @@ The best songs on this album are some of the best songs that Taylor Swift has ev
 
 This order is absolute: these four songs are exactly where they need to be.
 
-1. *exile*
-2. *epiphany*
-3. *the last great american dynasty*
-4. *betty*
+**1\.** *exile*  
+**2\.** *epiphany*  
+**3\.** *the last great american dynasty*  
+**4\.** *betty*  
 
 ## Q3: Real Bangers
 
@@ -28,10 +28,10 @@ These songs are all great, and it's always exciting when they make an appearance
 
 This order is weak, although *my tears ricochet* is always at the top. I can shuffle the rest based on recency bias.
 
-5. *my tears ricochet*
-6. *the 1*
-7. *illicit affairs*
-8. *invisible string*
+**5\.** *my tears ricochet*  
+**6\.** *the 1*  
+**7\.** *illicit affairs*  
+**8\.** *invisible string*  
 
 ## Q2: Junior Varsity
 
@@ -39,10 +39,10 @@ All of these songs are very good, and I would enjoy seeing them on any playlist.
 
 I am confident in this order, although they are all very close.
 
-9. *peace*
-10. *hoax*
-11. *seven*
-12. *mad woman*
+**9\.** *peace*  
+**10\.** *hoax*  
+**11\.** *seven*  
+**12\.** *mad woman*  
 
 ## Q1: Forgettable
 
@@ -50,7 +50,7 @@ There isn't a single song on the album that I dislike, and in the moment I would
 
 This order is weak, although *cardigan* is guaranteed to be last.
 
-13. *august*
-14. *mirrorball*
-15. *this is me trying*
-16. *cardigan*
+**13\.** *august*  
+**14\.** *mirrorball*  
+**15\.** *this is me trying*  
+**16\.** *cardigan*  
