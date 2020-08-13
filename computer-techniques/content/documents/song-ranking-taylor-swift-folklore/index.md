@@ -11,7 +11,7 @@ tags:
 draft: false
 ---
 
-I have broken down all 16 songs on the albm into ranked quartiles, and then attempted to rank each song within the quartile.
+I have broken down all 16 songs on the album into ranked quartiles, and then attempted to rank each song within the quartile.
 
 [Here is an Apple Music playlist with the songs in this order.](https://music.apple.com/us/playlist/ranked-folklore/pl.u-pVbYtZ7d3yB)
 
