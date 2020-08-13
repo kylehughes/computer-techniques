@@ -11,6 +11,10 @@ tags:
 draft: false
 ---
 
+These are my rankings for the songs on the album *folklore* by Taylor Swift. I have broken them down into ranked quartiles, and then attempted to rank each song within the quartile.
+
+[Here is an Apple Music playlist with the songs in this order.](https://music.apple.com/us/playlist/ranked-folklore/pl.u-pVbYtZ7d3yB)
+
 ## Q4: Unimpeachable Classics
 
 The best songs on this album are some of the best songs that Taylor Swift has ever made. I will listen to these songs for the rest of my life. *exile* may be my favorite song of all-time, a combination of my favorite artists and sounds.
