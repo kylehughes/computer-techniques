@@ -1,6 +1,6 @@
 ---
 title: "Single-Family Home Network Deployment with Coaxial Backhaul"
-description: "A small case study on deploying a home network in buildings that are wired for coaxial cable access."
+description: "How I deployed a gigabit home network with multiple access points in a building wired for coax."
 date: "2020-01-04"
 categories:
   - "coaxial-backhaul"
