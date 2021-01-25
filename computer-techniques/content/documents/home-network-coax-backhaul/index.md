@@ -74,7 +74,7 @@ I won't provide the entire history of MoCA adoption and rollout, but the list be
 
 #### Network Topology
 
-This diagram shows the topology of the network at the time of writing. It has been fully operational, with the MoCA backhaul running at gigabit speeds, for 8 months.
+This diagram shows the topology of the network at the time of writing. It has been fully operational, with the MoCA backhaul running at gigabit speeds, for years.
 
 {{< svg src="images/diagram_network-topology" class="full-document__diagram full-document__diagram--transparent" >}}
 
