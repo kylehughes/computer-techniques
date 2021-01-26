@@ -4,7 +4,6 @@ contentDir                      = "computer-techniques/content"
 dataDir                         = "computer-techniques/data"
 disableKinds                    = ["RSS", "section", "taxonomy", "taxonomyTerm"]
 enableGitInfo                   = true
-googleAnalytics                 = "UA-56024310-2"
 languageCode                    = "en-us"
 layoutDir                       = "computer-techniques/layouts"
 publishDir                      = "build"
@@ -15,7 +14,9 @@ themesDir                       = "computer-techniques/themes"
 title                           = "Computer Techniques"
 uglyurls                        = true
 
+[Author]  
+    name                        = "Kyle Hughes" 
+    twitter                     = "KyleHughes"
+
 [params]
-    author                      = "Kyle Hughes"
-    description                 = ""
-    acct_twitter                = "KyleHughes"
+    description                 = "How to use computers professionally and recreationally."

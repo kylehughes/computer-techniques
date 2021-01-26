@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="{{ .Site.Params.author }}">
+    <meta name="author" content="{{ .Site.Author.name }}">
     <meta name="description" content="{{ .Site.Params.description }}">
     {{ .Hugo.Generator }}
     <meta name="robots" content="index, follow">
@@ -13,21 +13,11 @@
 
     <!-- OpenGraph Metadata -->
 
-    <meta property="og:url" content="{{ .Site.BaseURL }}">
-    <meta property="og:title" content="{{ .Site.Params.author }}">
-    <meta property="og:image" content="{{ printf "%s%s" $.Site.BaseURL "opengraph-banner.png" }}">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="{{ .Site.Title }}">
-    <meta property="og:description" content="{{ .Site.Params.description }}">
+    {{ partial "open-graph.html" . }}
 
     <!-- Twitter Metadata -->
 
-    <meta name="twitter:title" content="{{ .Site.Title }}">
-    <meta name="twitter:description" content="{{ .Site.Params.description }}">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="{{ .Site.BaseURL }}">
-    <meta name="twitter:creator" content="@{{ .Site.Params.acct_twitter }}">
-    <meta name="twitter:image" content="{{ printf "%s%s" $.Site.BaseURL "opengraph-banner.png" }}">
+    {{ partial "twitter-card.html" . }}
 
     <!-- Resources -->
 
