@@ -18,7 +18,7 @@ The sources are unrelated but the recordings share similar properties:
 
 ### [The Talk Show: Bond Anthology](https://www.david-smith.org/blog/2014/12/10/the-talk-show-bond/)
 
-*The Talk Show* is one of my favorite podcasts and I have been listening for over a decade. Dan Benjamin and John Gruber have two of my favorite speaking voices. I have no interest in James Bond. Thus, their 22-episode run of reviewing James Bond movies is perfect for me. 
+*The Talk Show* is one of my favorite podcasts and I have been listening for over a decade. Dan Benjamin and John Gruber have two of my favorite speaking voices. I have no interest in James Bond. Thus, their 23-episode run of reviewing James Bond movies is perfect for me. 
 
 David Smith graciously put out a collection featuring only the James Bond segments from the episodes. I listen to these frequently.
 
