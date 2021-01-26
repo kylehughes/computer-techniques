@@ -1,6 +1,6 @@
 ---
 title: "Recipe: Pressure-Cooker Oatmeal"
-description: "How to make the best oatmeal – rolled & steel cut – in a pressure cooker."
+description: "How to make the best oatmeal in a pressure cooker."
 date: "2019-11-27"
 categories:
   - "food"
