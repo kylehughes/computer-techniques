@@ -1,5 +1,5 @@
 <head>
-    <title>{{ if .Page.Title }}{{ .Page.Title | markdownify | plainify }} &mdash; {{ end }}{{ .Site.Title }}</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ if .Page.Title }}{{ .Page.Title | markdownify | plainify }} &mdash; {{ .Site.Title }}{{ end }}{{ end }}</title>
 
     <!-- General Metadata -->
 
