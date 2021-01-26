@@ -11,7 +11,7 @@ draft: false
 
 I love spoken word audio: podcasts, talk radio, narrations, and more. I primarily listen for enjoyment. There is a choice selection that I listen to when I need to focus on work or go to sleep. These are rare and difficult to discover. I collect and share them here.
 
-I cannot say for sure what makes a good one of these. The sources are unrelated but the recordings share similar properties:
+The sources are unrelated but the recordings share similar properties:
 
 * Mild-to-deep monotone voices
 * Perfectly uninteresting topics
@@ -26,4 +26,4 @@ David Smith graciously put out a collection featuring only the James Bond segmen
 
 I love posh British accents. I am not a captain of a boat around the British Isles. Thus, the BBC's maritime weather radio program is perfect for me.
 
-Each report is not long. Someone has graciously compiled five hours worth of reports into a single video on YouTube. This stretches the limits of uninteresting, but it is truly sublime.
+Each report is not long. Someone has graciously compiled five hours worth of reports into a single video on YouTube. This stretches the limits of uninteresting, but it is truly sublime. 
