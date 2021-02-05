@@ -16,14 +16,14 @@ The sources are unrelated but the recordings share similar properties:
 * Mild-to-deep monotone voices
 * Perfectly uninteresting topics
 
-### [The Talk Show: Bond Anthology](https://www.david-smith.org/blog/2014/12/10/the-talk-show-bond/)
-
-*The Talk Show* is one of my favorite podcasts and I have been listening for over a decade. Dan Benjamin and John Gruber have two of my favorite speaking voices. I have no interest in James Bond. Thus, their 23-episode run of reviewing James Bond movies is perfect for me. 
-
-David Smith graciously put out a collection featuring only the James Bond segments from the episodes. I listen to these frequently.
-
 ### [The BBC Shipping Forecast](https://www.youtube.com/watch?v=CxHa5KaMBcM)
 
 I love posh British accents. I am not a captain of a boat around the British Isles. Thus, the BBC's maritime weather radio program is perfect for me.
 
 Each report is not long. Someone has graciously compiled five hours worth of reports into a single video on YouTube. This stretches the limits of uninteresting, but it is truly sublime. 
+
+### [The Talk Show: Bond Anthology](https://www.david-smith.org/blog/2014/12/10/the-talk-show-bond/)
+
+*The Talk Show* is one of my favorite podcasts and I have been listening for over a decade. Dan Benjamin and John Gruber have two of my favorite speaking voices. I have no interest in James Bond. Thus, their 23-episode run of reviewing James Bond movies is perfect for me. 
+
+David Smith graciously put out a collection featuring only the James Bond segments from the episodes. I listen to these frequently.
