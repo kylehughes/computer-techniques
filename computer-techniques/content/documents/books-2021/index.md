@@ -9,6 +9,8 @@ tags:
 draft: false
 ---
 
+## January
+
 ### [Kissa by Kissa](https://shop.specialprojects.jp/products/kissa-by-kissa)
 
 A beautiful and durable physical book, the best I have ever held and smelled. The words are precise but not precious. The photos capture the uncanny valley of seeing Japan through Western eyes. I tried to pinch-to-zoom.
