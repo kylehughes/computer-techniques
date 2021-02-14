@@ -17,13 +17,14 @@
             <section class="home__articles">
                 
                 <header class="home__section-header">
-                    <h4>Documents</h4>
-                    <!-- <div class="home__section-header__action"><a href="{{ .Site.BaseURL }}documents/index.xml">RSS</a></div> -->
+                    <h4>Recent Documents</h4>
                 </header>
 
-                {{ range first 5 .Site.RegularPages }}
+                {{ range first 3 .Site.RegularPages }}
                     {{ .Render "brief-document" }}
                 {{ end }}
+
+                <a href="{{ relref . "documents" }}">MORE</a>
 
             </section>
 

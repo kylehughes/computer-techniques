@@ -2,7 +2,7 @@ assetDir                        = "computer-techniques/assets"
 baseurl                         = "https://kylehugh.es/"
 contentDir                      = "computer-techniques/content"
 dataDir                         = "computer-techniques/data"
-disableKinds                    = ["RSS", "section", "taxonomy", "taxonomyTerm"]
+disableKinds                    = ["RSS", "taxonomy", "taxonomyTerm"]
 enableGitInfo                   = true
 languageCode                    = "en-us"
 layoutDir                       = "computer-techniques/layouts"
@@ -12,7 +12,7 @@ pygmentsStyle                   = "dracula"
 staticDir                       = "computer-techniques/static"
 themesDir                       = "computer-techniques/themes"
 title                           = "Computer Techniques"
-uglyurls                        = true
+uglyurls                        = false
 
 [Author]  
     name                        = "Kyle Hughes" 
