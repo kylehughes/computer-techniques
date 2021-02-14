@@ -172,6 +172,21 @@
     }
 }
 
+.file-metadata {
+    /* 
+        Appearance 
+    */
+
+    font-size: .6em;
+    line-height: 1.5em;
+
+    /* 
+        Layout
+    */
+
+    margin-top: 4em;
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // HOME PAGE
 ////////////////////////////////////////////////////////////////////////////////
@@ -455,19 +470,4 @@
             padding: 0em;
         }
     }
-}
-
-.full-document__metadata {
-    /* 
-        Appearance 
-    */
-
-    font-size: .6em;
-    line-height: 1.5em;
-
-    /* 
-        Layout
-    */
-
-    margin-top: 4em;
 }
