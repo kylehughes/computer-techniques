@@ -86,3 +86,20 @@ Push production-ready changes to `origin/mainline`. The *Deploy to production* G
 #### Manual
 
 Manual deployments are not supported.
+
+## Tech Notes
+
+### How I make subdirectory index pages work with CloudFront
+
+e.g. `/documents/`
+
+We want to let the S3 distribution handle the "error" when CloudFront cannot resolve the URL without specifying the `index.html` file name. We change the origin domain name for the distribution to point to the S3 website hosting URL.
+
+Currently, the origin domain name of the CloudFront distribution is `kylehugh.es.s3-website-us-west-2.amazonaws.com`.
+
+Previously, the origin domain name of the CloudFront distribution was `kylehugh.es.s3.amazonaws.com`.
+
+Source: https://stackoverflow.com/questions/31017105/how-do-you-set-a-default-root-object-for-subdirectories-for-a-statically-hosted
+
+www.kylehugh.es.s3-website-us-west-2.amazonaws.com
+kylehugh.es.s3-website-us-west-2.amazonaws.com
