@@ -100,6 +100,3 @@ Currently, the origin domain name of the CloudFront distribution is `kylehugh.es
 Previously, the origin domain name of the CloudFront distribution was `kylehugh.es.s3.amazonaws.com`.
 
 Source: https://stackoverflow.com/questions/31017105/how-do-you-set-a-default-root-object-for-subdirectories-for-a-statically-hosted
-
-www.kylehugh.es.s3-website-us-west-2.amazonaws.com
-kylehugh.es.s3-website-us-west-2.amazonaws.com
