@@ -7,8 +7,6 @@ enableGitInfo                   = true
 languageCode                    = "en-us"
 layoutDir                       = "computer-techniques/layouts"
 publishDir                      = "build"
-pygmentsCodefences              = true
-pygmentsStyle                   = "dracula"
 staticDir                       = "computer-techniques/static"
 themesDir                       = "computer-techniques/themes"
 title                           = "Computer Techniques"
@@ -20,3 +18,14 @@ uglyurls                        = false
 
 [params]
     description                 = "How to use computers professionally and recreationally."
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
