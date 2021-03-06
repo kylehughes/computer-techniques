@@ -1,19 +1,20 @@
 ---
-title: "How To Use Continuous Corners on Apple Platforms"
-description: "The easiest way to make shapes look like they belong on Apple platforms."
+title: "How To Use Continuous Corners on iOS, macOS, and tvOS"
+description: "The canonical shape for rounded corners on Apple platforms."
 date: "2021-03-05"
 categories:
   - "how-to"
 tags:
+  - "appkit"
+  - "core-animation"
   - "how-to"
+  - "swift"
+  - "swiftui"
+  - "uikit"
 draft: false
 ---
 
-As of iOS 13, tvOS 13, and macOS 10.15 we have access to the same continous corners that Apple uses. Any shape using a non-zero corner radius that does not use continuous corners will look out of place on modern Apple OSes.
-
-A detailed explanation of continuous corners can be found [here](https://99percentinvisible.org/article/circling-square-designing-squircles-instead-rounded-rectangles/).
-
-Continuous corners are also known as smooth corners or squircles.
+Available for iOS 13+, macOS 10.15+, and tvOS 13+.
 
 ## SwiftUI
 
