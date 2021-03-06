@@ -126,9 +126,8 @@ pre {
     */
 
     font-family: monotype;
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    overflow-x: scroll;
+    white-space: nowrap;
 }
 
 code {
