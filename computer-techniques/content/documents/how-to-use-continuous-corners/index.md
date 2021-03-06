@@ -22,7 +22,7 @@ Available for iOS 13+, macOS 10.15+, and tvOS 13+.
 RoundedRectangle(cornerRadius: 15, style: .continuous)
 ```
 
-## CALayer / UIKit / AppKit
+## Core Animation / UIKit / AppKit
 
 ```swift
 view.layer.cornerRadius = 15
