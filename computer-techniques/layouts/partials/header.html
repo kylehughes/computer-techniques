@@ -1,4 +1,4 @@
 <header>
-    <h1><a class="no-underline" href="#">{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ if .Page.Title }}{{ .Page.Title | markdownify | plainify }}{{ end }}{{ end }}</a></h1>
-    <div class="mt-2 text-black">by Kyle Hughes</div>
+    <h1 class="mt-0"><a class="no-underline" href="{{ .RelPermalink }}">{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ if .Page.Title }}{{ .Page.Title | markdownify | plainify }}{{ end }}{{ end }}</a></h1>
+    <div class="mt-1 text-black"><a class="no-underline" href="{{ relref . "about"}}">by Kyle Hughes</a></div>
 </header>

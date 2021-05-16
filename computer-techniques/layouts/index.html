@@ -1,13 +1,13 @@
 {{ define "main" }}
-<main class="container mx-auto p-8">
-    <div class="mx-auto max-w-prose space-y-8">
+<main>
+    <div class="mx-auto max-w-prose space-y-6 md:space-y-8">
         <div>
             <a class="invisible">&#9664; Back</a>
         </div>
 
         {{ partial "header.html" . }}
 
-        <ol class="space-y-6 list-roman list-outside" reversed>
+        <ol class="space-y-6 list-none md:list-decimal list-outside" reversed>
             {{ range where .Site.RegularPages "Type" "documents" }}
                 <li><a class="underline" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></li>
             {{ end }}

@@ -14,6 +14,10 @@
     body {
         @apply bg-green-100 font-mono text-black;
     }
+
+    figure {
+        @apply mt-4 rounded bg-black;
+    }
     
     h1 {
         @apply mt-8 font-semibold text-2xl;
@@ -36,30 +40,26 @@
     }
 
     hr {
-        @apply border-black;
+        @apply mt-12 border-black;
     }
 
-    li {
-        @apply mt-2;
+    main {
+        @apply container mx-auto p-6 md:p-8;
     }
     
     ol {
-        @apply mt-4 list-decimal;
+        @apply mt-4 space-y-3 list-decimal list-inside md:list-outside;
     }
 
     p {
-        @apply mt-2;
+        @apply mt-4;
     }
 
     pre {
-        @apply mt-2 p-4 rounded-lg bg-green-50 overflow-x-scroll;
+        @apply mt-4 p-4 rounded bg-green-50 overflow-x-auto;
     }
     
     ul {
-        @apply mt-4 list-disc;
+        @apply mt-4 space-y-3 list-disc list-inside md:list-outside;
     }
-}
-
-.footnotes {
-    @apply mt-8;
 }
