@@ -1,75 +1,17 @@
-<!doctype html>
-<!--[if lt IE 9]><html class="oldie" lang="en"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en">
-<!--<![endif]-->
-
-{{ partial "_head.html" . }}
-
-<body>
-
-    <div class="container">
+{{ define "main" }}
+<main class="container mx-auto p-8">
+    <div class="mx-auto max-w-prose space-y-8">
+        <div>
+            <a class="invisible">&#9664; Back</a>
+        </div>
 
         {{ partial "header.html" . }}
 
-        <div class="content">
-
-            <section class="home__articles">
-                
-                <header class="home__section-header">
-                    <h4>Recent Documents</h4>
-                </header>
-
-                {{ range first 3 .Site.RegularPages }}
-                    {{ .Render "brief-document" }}
-                {{ end }}
-
-                <a href="{{ relref . "documents" }}">ALL</a>
-
-            </section>
-
-            <section class="home__links">
-
-                <section class="home__projects">
-
-                        <header class="home__section-header">
-                            <h4>Projects</h4>
-                        </header>
-
-                        <ul>
-                            <li><a href="https://amazon.care">Amazon Care</a></li>
-                            <li><a href="https://apps.apple.com/us/app/amazon-kindle/id302584613">Amazon Kindle</a></li>
-                            <li><a href="https://github.com/kylehughes/code-monkey-apple">Code Monkey Apple</a></li>
-                            <li><a href="https://github.com/kylehughes/computer-techniques">Computer Techniques</a></li>
-                            <li><a href="https://twitter.com/DITHERPEDIA">Ditherpedia</a></li>
-                            <li><a href="https://superhighway.info">Information Superhighway</a></li>
-                            <li><a href="https://twitter.com/SuperhighwayBot">Information Superhighway Bot</a></li>
-                            <li><a href="https://github.com/kylehughes/RomanNumeralKit">RomanNumeralKit</a></li>
-                            <li><a href="https://github.com/kylehughes/sort-state-university">Sort State University</a></li>
-                        </ul>
-    
-                </section>
-
-                <section class="home__accounts">
-
-                    <header class="home__section-header">
-                        <h4>Bookmarks</h4>
-                    </header>
-    
-                    <ul>
-                        {{ range sort $.Site.Data.social.accounts "site" "asc" }}
-                            <li><a href="{{ .url }}">{{ .site }}</a></li>
-                        {{ end }}
-                    </ul>
-    
-                </section>
-
-            </section>
-
-        </div>
-
+        <ol class="space-y-6 list-roman list-outside" reversed>
+            {{ range where .Site.RegularPages "Type" "documents" }}
+                <li><a class="underline" href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></li>
+            {{ end }}
+        </ol>
     </div>
-
-</body>
-
-</html>
+</main>
+{{ end }}

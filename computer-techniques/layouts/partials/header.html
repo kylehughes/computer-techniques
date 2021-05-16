@@ -1,7 +1,4 @@
-<header class="header">
-
-    <span class="header__title"><a href="/">Computer Techniques</a></span>
-    <br/>
-    <span class="header__subtitle"><a href="{{ relref . "about"}}">by Kyle Hughes</a></span>
-
+<header>
+    <h1><a class="no-underline" href="#">{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ if .Page.Title }}{{ .Page.Title | markdownify | plainify }}{{ end }}{{ end }}</a></h1>
+    <div class="mt-2 text-black">by Kyle Hughes</div>
 </header>

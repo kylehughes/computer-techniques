@@ -1,32 +1,13 @@
-<!doctype html>
-<!--[if lt IE 9]><html class="oldie" lang="en"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en">
-<!--<![endif]-->
-
-{{ partial "_head.html" . }}
-
-<body>
-
-    <div class="container">
+{{ define "main" }}
+<main class="container mx-auto p-8 bg-green-100 font-mono">
+    <div class="mx-auto max-w-prose space-y-8">
+        <a class="no-underline" href="/">&#9664; Back</a>
 
         {{ partial "header.html" . }}
 
-        <div class="content">
-
+        <article>
             {{ .Content }}
-
-            <section class="file-metadata">
-                Originally published on {{ .PublishDate.Format "Monday, January 2, 2006" }}.
-                <br/> 
-                Last modified on {{ .Lastmod.Format "Monday, January 2, 2006" }}.
-                <br/>
-            </section>
-
-        </div>
-
+        </article>
     </div>
-
-</body>
-
-</html>
+</main>
+{{ end }}
