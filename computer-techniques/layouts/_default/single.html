@@ -1,20 +1,18 @@
 {{ define "main" }}
 <main>
-    <div class="mx-auto max-w-prose space-y-6 md:space-y-8">
-        <a class="no-underline" href="/">&#9664; Home</a>
+    <a class="no-underline" href="/">&#9664; Home</a>
 
-        {{ partial "header.html" . }}
+    {{ partial "header.html" . }}
 
-        <article>
-            {{ .Content }}
-        </article>
+    <article>
+        {{ .Content }}
+    </article>
 
-        <footer>
-            <ul class="space-y-0 list-none text-xs text-right">
-                <li>Published {{ .PublishDate.Format "2006-01-02" }}</li>
-                <li>Last modified {{ .Lastmod.Format "2006-01-02" }}</li>
-            </ul>
-        </footer>
-    </div>
+    <footer>
+        <ul class="space-y-0 list-none text-xs text-right">
+            <li>Published {{ .PublishDate.Format "2006-01-02" }}</li>
+            <li>Last modified {{ .Lastmod.Format "2006-01-02" }}</li>
+        </ul>
+    </footer>
 </main>
 {{ end }}

@@ -44,7 +44,7 @@
     }
 
     main {
-        @apply container mx-auto p-6 md:p-8;
+        @apply container mx-auto max-w-prose space-y-6 md:space-y-8 p-6 md:p-8;
     }
     
     ol {
