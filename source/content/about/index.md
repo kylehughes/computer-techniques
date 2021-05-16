@@ -14,7 +14,9 @@ I am a software enthusiast living in Seattle, Washington, United States. I use c
 - [Computer Techniques](https://github.com/kylehughes/computer-techniques)
 - [Ditherpedia](https://twitter.com/DITHERPEDIA)
 - [Information Superhighway](https://superhighway.info)
+- [Information Superhighway Bot](https://twitter.com/SuperhighwayBot)
 - [RomanNumeralKit](https://github.com/kylehughes/RomanNumeralKit)
+- [Sort State University](https://github.com/kylehughes/sort-state-university)
 
 ## Bookmarks
 
