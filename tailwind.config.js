@@ -2,9 +2,9 @@ module.exports = {
   purge: {
     enabled: process.env.HUGO_ENVIRONMENT === "production",
     content: [
-      "./computer-techniques/layouts/**/*.html", 
-      "./computer-techniques/content/**/*.md", 
-      "./computer-techniques/content/**/*.html",
+      "./source/layouts/**/*.html", 
+      "./source/content/**/*.md", 
+      "./source/content/**/*.html",
     ],
   },
   darkMode: false, // or 'media' or 'class'

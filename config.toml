@@ -1,13 +1,13 @@
-assetDir                        = "computer-techniques/assets"
+assetDir                        = "source/assets"
 baseurl                         = "https://kylehugh.es/"
-contentDir                      = "computer-techniques/content"
-dataDir                         = "computer-techniques/data"
+contentDir                      = "source/content"
+dataDir                         = "source/data"
 disableKinds                    = ["RSS", "taxonomy", "taxonomyTerm", "section"]
 enableGitInfo                   = true
 languageCode                    = "en-us"
-layoutDir                       = "computer-techniques/layouts"
+layoutDir                       = "source/layouts"
 publishDir                      = "build"
-staticDir                       = "computer-techniques/static"
+staticDir                       = "source/static"
 title                           = "Computer Techniques"
 uglyurls                        = false
 

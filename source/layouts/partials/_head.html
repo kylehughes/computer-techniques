@@ -1,5 +1,5 @@
 <head>
-    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ if .Page.Title }}{{ .Page.Title | markdownify | plainify }} &mdash; {{ .Site.Title }}{{ end }}{{ end }}</title>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ if .Title }}{{ .Title | markdownify }} &mdash; {{ .Site.Title }}{{ end }}{{ end }}</title>
 
     <!-- General Metadata -->
 
@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="author" content="{{ .Site.Author.name }}">
     <meta name="description" content="{{ .Site.Params.description }}">
-    {{ .Hugo.Generator }}
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
