@@ -63,4 +63,4 @@ I am including the message that I wrote in that final appeal below. I didn't kno
 > 
 > I love developing for this platform, I do it very well, and I believe that I have built a special app with Information Superhighway. It is not large, and does not have many traditional user interface elements, but that does not mean that is a scam or is a trivial work. We have the same goals of seeing great software on the App Store, so please believe me when I say that this app belongs.
 
-*P.S.* This is message an unflattering example of how I write without editing. It is a Herculean effort to remove most of the punctuation.
+*P.S.* This message is an unflattering example of how I write without editing. It is a Herculean effort to remove most of the punctuation.
