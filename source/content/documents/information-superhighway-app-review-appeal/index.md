@@ -25,7 +25,7 @@ I resubmitted the same build with different screenshots and marketing copy in th
 
 Throughout July I resubmitted the same build four more times to App Review with different marketing copy and all were rejected. I don't know why I persisted except that there wasn't much else to do. That was an unexpected side effect of giving up.
 
-A month later my ego recovered and I decided to take another run at it. On August 23, 2020 I resubmitted that same build with the same marketing copy and appealed the same rejection to the App Review Board. The message that went along with the appeal was different. This time I didn't mash out a scared plea on my iPhone: I wrote a confident statement on my Mac. And this time the App Review Board reversed the rejection and approved Information Superhighway for the App Store. 
+A month later my ego recovered and I took another run at it. On August 23, 2020 I resubmitted that same build with the same marketing copy and appealed the same rejection to the App Review Board. The message that went along with the appeal was different. This time I didn't mash out a scared plea on my iPhone: I wrote a confident statement on my Mac. And this time the App Review Board reversed the rejection and approved Information Superhighway for the App Store. 
 
 On September 1, 2020 [it went live](https://apps.apple.com/us/app/id1494503555).
 
